@@ -3,12 +3,12 @@ freffreq = 2*pi*50
 sreffreq = 2*pi*50
 
 fswfreq = 2050
-sswfreq=2050
+sswfreq= 2050
 
 fma=0.9
 sma=0.9
 
-Rin=1e-16
+Rin=1
 dcin=20
 
 fdclinkres=1e-6
@@ -18,6 +18,6 @@ sdclinkcap=1e-2
 
 
 FRload=5
-FLload=2e-3
+FLload=20e-3
 SRload=5
-SLload=2e-3
+SLload=20e-3

@@ -2,8 +2,8 @@ clear
 freffreq = 2*pi*50
 sreffreq = 2*pi*50
 
-fswfreq = 2050
-sswfreq= 2050
+fswfreq = 20000
+sswfreq= 20000
 
 fma=0.9
 sma=0.9
@@ -12,9 +12,9 @@ Rin=1
 dcin=547.66
 
 fdclinkres=1e-6
-fdclinkcap=1e-2
+fdclinkcap=100e-6
 sdclinkres=1e-6
-sdclinkcap=1e-2
+sdclinkcap=100e-6
 
 Load_Real_Power = 4250;
 Load_Power_Factor = 0.9; 

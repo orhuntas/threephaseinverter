@@ -20,16 +20,16 @@ Load_Apparent_Power = Load_Real_Power/Load_Power_Factor; %VA
 Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));
 
 n = 2; %number of series modules
-SVll_rms = 380;
-SZload = (SVll_rms)^2/(Load_Apparent_Power/3);
-SIline = Load_Apparent_Power/(3*SZload);
+SVll_rms = 370;
+SIline = Load_Apparent_Power/(sqrt(3)*SVll_rms);
+SZload = (SVll_rms)/(SIline*sqrt(3));
 SRload = SZload*Load_Power_Factor ;  %ohm total
-SXload = SZload*sin(acos(Load_Power_Factor)); %ohm total
+SXload = sqrt((SZload)^2-(SRload)^2); %ohm total
 SLload = SXload/sreffreq;
 
-FVll_rms = 380 ;
-FZload = (FVll_rms)^2/(Load_Apparent_Power/3); 
-FIline = Load_Apparent_Power/(3*FZload);
+FVll_rms = 370 ;
+FIline = Load_Apparent_Power/(sqrt(3)*FVll_rms);
+FZload = (FVll_rms)/(FIline*sqrt(3)); 
 FRload = FZload*Load_Power_Factor;  %ohm total
-FXload = FZload*sin(acos(Load_Power_Factor)); %ohm total
+FXload = sqrt((FZload)^2-(FRload)^2); %ohm total
 FLload = FXload/freffreq;

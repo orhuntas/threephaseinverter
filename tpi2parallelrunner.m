@@ -14,7 +14,7 @@ dcin=547.66
 fdclinkres=1e-6
 fdclinkcap=100e-6
 
-Load_Real_Power = 4250;
+Load_Real_Power = 2125;
 Load_Power_Factor = 0.9; 
 Load_Apparent_Power = Load_Real_Power/Load_Power_Factor; %VA
 Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));

@@ -2,6 +2,8 @@ clear
 freffreq = 2*pi*50
 sreffreq = 2*pi*50
 
+Ef=154.55/2
+
 fswfreq = 20000
 sswfreq= 20000
 

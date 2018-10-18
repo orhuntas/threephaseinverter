@@ -14,9 +14,9 @@ Rin=1
 dcin=547.66
 
 fdclinkres=1e-6
-fdclinkcap=100e-6
+fdclinkcap=10e-3
 sdclinkres=1e-6
-sdclinkcap=100e-6
+sdclinkcap=10e-3
 
 Load_Real_Power = 4250;
 Load_Power_Factor = 0.9; 

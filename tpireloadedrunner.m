@@ -10,19 +10,19 @@ fma=0.9
 sma=0.9
 
 Rin=1
-dcin=273
+dcin=547.66
 
 fdclinkres=1e-6
 fdclinkcap=10e-3
 sdclinkres=1e-6
 sdclinkcap=10e-3
 
-Load_Real_Power = 4250;
+Load_Real_Power = 2000;
 Load_Power_Factor = 0.9; 
 Load_Apparent_Power = Load_Real_Power/Load_Power_Factor; %VA
 Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));
 
-n = 2; %number of series modules
+n = 1; %number of series modules
 SVll_rms = sma*dcin*0.612/n;
 SIline = Load_Apparent_Power/(SVll_rms*sqrt(3));
 SZload = SVll_rms/(SIline*sqrt(3));  %ohm total

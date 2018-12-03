@@ -22,6 +22,9 @@ Load_Power_Factor = 0.9;
 Load_Apparent_Power = Load_Real_Power/Load_Power_Factor; %VA
 Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));
 
+topopen=0.044
+botopen=10
+
 n = 1; %number of series modules
 SVll_rms = sma*dcin*0.612/n;
 SIline = Load_Apparent_Power/(SVll_rms*sqrt(3));

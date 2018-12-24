@@ -22,7 +22,7 @@ Load_Power_Factor = 0.9;
 Load_Apparent_Power = Load_Real_Power/Load_Power_Factor; %VA
 Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));
 
-topopen=0.044
+topopen=10
 botopen=10
 
 n = 1; %number of series modules

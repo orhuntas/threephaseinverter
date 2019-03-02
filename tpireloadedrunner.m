@@ -24,9 +24,9 @@ Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));
 
 atopopen=10
 abotopen=10
-btopopen=10
-bbotopen=10
-ctopopen=0.03
+btopopen=0.03
+bbotopen=10 %angle btw 10 20
+ctopopen=10 % angle btw -15 and -20 
 cbotopen=10
 
 n = 1; %number of series modules

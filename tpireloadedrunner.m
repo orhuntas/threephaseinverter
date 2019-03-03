@@ -22,10 +22,10 @@ Load_Power_Factor = 0.9;
 Load_Apparent_Power = Load_Real_Power/Load_Power_Factor; %VA
 Load_Reactive_Power = Load_Apparent_Power*sin(acos(Load_Power_Factor));
 
-atopopen=10
+atopopen=0.012
 abotopen=10
-btopopen=0.03
-bbotopen=10 %angle btw 10 20
+btopopen=10
+bbotopen=0.010 %angle btw 10 20
 ctopopen=10 % angle btw -15 and -20 
 cbotopen=10
 
